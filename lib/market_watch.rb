@@ -1,6 +1,2 @@
-require "market_watch/version"
-
-module MarketWatch
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require_relative "./market_watch/version"
+require_relative "./market_watch/cli"
