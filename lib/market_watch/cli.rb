@@ -32,8 +32,8 @@ class MarketWatch::CLI
 
 
         def market_select
-          puts "Select your Market or type exit to enter :"
           input = nil
+          puts "Select your Market by typing a number, type markets to see them again or type exit to exit the program :"
           while input != "exit"
             input = gets.strip.downcase
               case input
@@ -67,7 +67,8 @@ class MarketWatch::CLI
                 puts "more info about your market14 ..."
               when "15"
                 puts "more info about your market15 ..."
-
+              when "markets"
+                puts list_markets
               end
             end
       end
