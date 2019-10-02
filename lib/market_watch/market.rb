@@ -1,6 +1,7 @@
 class MarketWatch::Market
 
 def self.today
+  #should return a bunuch of markets 
   puts <<-DOC.gsub /^\s*/, ''
           1 s&p 500 - (1%)
           2 dow 30 - (2%)

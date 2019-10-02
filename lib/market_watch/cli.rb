@@ -9,15 +9,13 @@ class MarketWatch::CLI
 
   def list_markets
   puts "Welcome, See how the Market you wanna know about is doing!"
-
-
       @Markets = MarketWatch::Market.today
+       puts "Select your Market by typing a number, type markets to see them again or type exit to exit the program :"
         end
 
 
         def market_select
           input = nil
-          puts "Select your Market by typing a number, type markets to see them again or type exit to exit the program :"
           while input != "exit"
             input = gets.strip.downcase
               case input
@@ -52,7 +50,8 @@ class MarketWatch::CLI
               when "15"
                 puts "more info about your market15 ..."
               when "markets"
-                puts list_markets
+                list_markets
+
               else
                 puts "I'm sure what you selected exists but not in this relm, to exit the program type exit."
               end
