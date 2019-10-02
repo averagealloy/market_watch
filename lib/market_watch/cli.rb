@@ -69,6 +69,8 @@ class MarketWatch::CLI
                 puts "more info about your market15 ..."
               when "markets"
                 puts list_markets
+              else
+                puts "I'm sure what you selected exists but not in this relm, to exit the program type exit."
               end
             end
       end
