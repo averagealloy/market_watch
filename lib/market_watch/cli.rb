@@ -1,4 +1,3 @@
-# our CLI Controller
 class MarketWatch::CLI
 
   def call
