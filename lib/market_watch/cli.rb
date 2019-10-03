@@ -10,7 +10,7 @@ class MarketWatch::CLI
   def list_markets
   puts "Welcome, See how the Market you wanna know about is doing!"
       @Markets = MarketWatch::Market.today
-       puts "Select your Market by typing a number, type markets to see them again or type exit to exit the program :"
+       puts "Select your Market by typing a number, type 'markets' to see them again or type exit to exit the program :"
         end
 
 
@@ -53,7 +53,8 @@ class MarketWatch::CLI
                 list_markets
 
               else
-                puts "I'm sure what you selected exists but not in this relm, to exit the program type exit."
+              #  puts "I'm sure what you selected exists but not in this realm, to exit the program type exit."
+              MarketWatch::Market
               end
             end
       end
