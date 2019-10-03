@@ -23,8 +23,8 @@ class MarketWatch::CLI
             puts "Select your Market by typing a number, type 'markets' to see them again or type exit to exit the program :"
             input = gets.strip.downcase
             if input.to_i > 0
-              puts @Markets[input.to_i - 1]
-
+              the_market = @Markets[input.to_i - 1]
+              puts "You have selected #{the_market.name}. The Broad Market Index for the market you have selected is #{the_market.BMI}.  "
             elsif input == "list"
               list_markets
             else
