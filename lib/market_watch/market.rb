@@ -1,27 +1,27 @@
 
 class MarketWatch::Market
 
-attr_accessor :name, :BMI, :status, :url, :points
+attr_accessor :name, :BMI, :status, :points, :url
 
 def self.today
   #should return a bunuch of markets
-  puts <<-DOC.gsub /^\s*/, ''
-          1 s&p 500 - (1%)
-          2 dow 30 - (2%)
-          3 nasdaq - (3%)
-          4 russell 2000 - (4%)
-          5 crude oil - (5%)
-          6 gold - (6%)
-          7 silver - (7%)
-          8 eur/usd - (8%)
-          9 10-yr bond - (9%)
-          10 vix - (10%)
-          11 gbp/usd - (11%)
-          12 usd/jpy - (12%)
-          13 bitcoin USD - (13%)
-          14 FTSE 100 - (14%)
-          15 nikkei 225 - (15%)
-          DOC
+  #  puts <<-DOC.gsub /^\s*/, ''
+  #          1 s&p 500 - (1%)
+  #          2 dow 30 - (2%)
+  #          3 nasdaq - (3%)
+  #          4 russell 2000 - (4%)
+  #          5 crude oil - (5%)
+  #          6 gold - (6%)
+  #          7 silver - (7%)
+  #          8 eur/usd - (8%)
+  #          9 10-yr bond - (9%)
+  #          10 vix - (10%)
+  #          11 gbp/usd - (11%)
+  #          12 usd/jpy - (12%)
+  #          13 bitcoin USD - (13%)
+  #          14 FTSE 100 - (14%)
+  #          15 nikkei 225 - (15%)
+  #          DOC
 
           market_1 = self.new
           market_1.name = "s&p 500"
@@ -38,7 +38,7 @@ def self.today
           market_2.url = "https://finance.yahoo.com"
 
           [market_1, market_2 ]
-            test = "test"
+            #test = "test"
 
         end
 
